@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制画布</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<script src="js/jquery.js"></script>
+<script src="js/shape.js"></script>
+<script src="js/canvas.js"></script>
+<body>
+<div class="box">
+    <div class="left">
+        <!--面包屑-->
+        <div class="btn">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+
+        <!--左侧导航-->
+        <ul class="nav">
+            <li>
+                <span class="icon-wenjian iconfont"></span>文件
+
+            </li>
+            <li><span class="icon-huahua iconfont"></span>画图</li>
+            <li><span class="icon-yanse iconfont"></span>颜色</li>
+            <li><span class="icon-leixing iconfont"></span>类型</li>
+            <li><span class="icon-kuandu iconfont"></span>线条宽度</li>
+            <li><span class="icon-xiangpica iconfont"></span>擦除</li>
+        </ul>
+
+        <!--菜单-->
+        <ul class="option1 option">
+            <li class="new">新建</li>
+            <li class="back">返回</li>
+            <li class="save">保存</li>
+        </ul>
+        <ul class="option2 option">
+            <li data-role="line">线条</li>
+            <li data-role="rect">矩形</li>
+            <li data-role="circle">圆</li>
+            <li data-role="bian">多边形</li>
+            <li data-role="jiao">多角形</li>
+            <li data-role="pen">铅笔</li>
+        </ul>
+        <ul class="option3 option">
+            <li>线条<input type="color" data-role="strokeStyle"></li>
+            <li>
+                填充<input type="color" data-role="fillStyle">
+            </li>
+        </ul>
+        <ul class="option4 option">
+            <li data-role="stroke">线条</li>
+            <li data-role="fill">填充</li>
+        </ul>
+        <ul class="option5 option">
+            <li data-role="1">细</li>
+            <li data-role="5">中</li>
+            <li data-role="10">粗</li>
+            <input type="number" placeholder="请填数字" class="number">
+        </ul>
+            <ul class="option6 option">
+                <li>
+                    <input type="number" placeholder="请填橡皮大小" class="number1">
+                </li>
+            </ul>
+
+    </div>
+    <!--画布-->
+    <div class="right">
+         <canvas width="800" height="500">
+             您的浏览器不支持画布
+         </canvas>
+        <div class="copy">
+            <div class="eraser">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
